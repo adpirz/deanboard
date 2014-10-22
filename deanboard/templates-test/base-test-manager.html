@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+        <title>DeanBoard</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong>DeanBoard</strong></a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Referrals</a></li>
+                    <li><a href="#">Consequence Rosters</a></li>
+                    <li><a href="#">DoS Manager</a></li>
+                </ul>
+<!--                 <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Find Student">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="user"><strong>Mr. Pirzada</strong> | admin</a><li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="container">
+            <div class="well">
+                <div class="row">
+                    
+                </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th class="hidden-xs">Referring Teacher</th>
+                            <th class="visible-xs">Ref. Teacher</th>
+                            <th class="hidden-xs hidden-sm">Advisory</th>
+                            <th class="hidden-xs">Time In</th>
+                            <th>Time Out</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ariana Davidson</td>
+                            <td class="hidden-xs">C. Iatridis</td>
+                            <td class="visible-xs">CI</td>
+                            <td class="hidden-xs hidden-sm">Gonzaga</td>
+                            <td class="hidden-xs">10:12 AM<td>
+                            <td><button type="button" class="btn btn-default">Exit</button></td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>David Johnson</td>
+                            <td class="hidden-xs">A. Pirzada</td>
+                            <td class="visible-xs">AP</td>
+                            <td class="hidden-xs hidden-sm">Tulane</td>
+                            <td class="hidden-xs">10:15 AM</td>
+                            <td>11:00 AM</td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+        <title>DeanBoard</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong>DeanBoard</strong></a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Referrals</a></li>
+                    <li><a href="#">Consequence Rosters</a></li>
+                    <li><a href="#">DoS Manager</a></li>
+                </ul>
+<!--                 <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Find Student">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="user"><strong>Mr. Pirzada</strong> | admin</a><li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="container">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="well">
+                <!--//  New Referral  //-->
+                    <h2 class="text-center">New Referral</h2>
+                    <p>Student Name</p>
+                    <input type="text" name="Student Name" id="name" class="form-control" value="" required="required">
+                    <br />
+                    <p>Location</p>
+                    <input type="text" name="Location" id="location" class="form-control" value="" required="required">
+                    <br />
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <p>Time</p>
+                            <input type="time" name="" id="input" class="form-control" value="" required="required" title="">
+                        </div>
+                        <br class="visible-xs visible-sm">
+                        <div class="col-md-6 col-lg-6">
+                            <p>Date</p>
+                            <input type="date" name="" id="input" class="form-control" value="" required="required" title="">
+                        </div>
+                    </div>
+                    <br />
+                    <p>Cause for Referral</p>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">Repeated Infractions</a>
+                        <a href="#" class="list-group-item">Walked Out</a>
+                        <a href="#" class="list-group-item">Walked Away/Ignored</a>
+                        <a href="#" class="list-group-item">Abusive/Profane Language</a>
+                        <a href="#" class="list-group-item">Threatening/Bullying</a>
+                        <a href="#" class="list-group-item">Harassment (sexual, racial, etc.)</a>
+                        <a href="#" class="list-group-item">Preventing continuation of class</a>
+                        <a href="#" class="list-group-item">Inappropriate response to consequence</a>
+                        <a href="#" class="list-group-item">Horseplay</a>
+                        <a href="#" class="list-group-item">Fight</a>
+                    </div>
+                    <p>Brief Explanation</p>
+                    <input type="text" name="Description" id="input" class="form-control" value="" required="required" pattern="" title="">
+                    <br/>
+                    <button type="button" class="btn btn-large btn-block btn-default">Submit</button>
+                    <!-- End new referral section-->
+
+                    <!-- Submission success-->
+<!--                     <h2 class="text-center">Success!</h2>
+                    <p> Your referral for <strong>Student Name</strong> has been submitted to the dean's office. </p>
+                    <p><strong>Student</strong> was referred for <strong>repeated infractions</strong> in class at <strong>10:15 AM</strong> by <strong>Ms. Iatridis</strong>.</p>
+                    <button type="button" class="btn btn-large btn-block btn-default">New Referral</button> -->
+                    <!---// Submission success-->
+                </div>
+
+            </div> 
+            <!--// New Referral-->
+
+            <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="well">
+                    <h2 class = "text-center">DoS Room</h2>
+                    <p>Scholars highlighted in <font color="#3399f3"><strong>blue</strong></font> are still in the office.</p>
+                    <p>Scholars highlighted in <font color="#519F0D"><strong>green</strong></font> will remain in the office all day.</p>
+                    <br/>
+                        <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Student</th>
+                                <th>Grade</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Javana Trays</td>
+                                <td>5</td>
+                                <td>10/16</td>
+                            </tr>
+                            <tr class="info">
+                                <td>Daryenna Jones</td>
+                                <td>6</td>
+                                <td>10/16</td>
+                            </tr>
+                            <tr>
+                                <td>Ashley Farnsworth</td>
+                                <td>6</td>
+                                <td>10/16</td>
+                            </tr>
+                            <tr>
+                                <td>Stephanie Blake</td>
+                                <td>8</td>
+                                <td>10/16</td>
+                            </tr>
+                            <tr class="success">
+                                <td>Jasmine Pettiford</td>
+                                <td>7</td>
+                                <td>10/16</td>
+                            </tr>
+                            <tr>
+                                <td>Torya Morris</td>
+                                <td>5</td>
+                                <td>10/16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

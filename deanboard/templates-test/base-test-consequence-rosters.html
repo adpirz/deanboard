@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+        <title>DeanBoard</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link href="deanboard.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><strong>DeanBoard</strong></a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Referrals</a></li>
+                    <li class="active"><a href="#">Consequence Rosters</a></li>
+                    <li><a href="#">DoS Manager</a></li>
+                </ul>
+<!--                 <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Find Student">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form> -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="user"><strong>Mr. Pirzada</strong> | admin</a><li>
+                    <li><a href="logout">Logout</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <div class="jumbotron hidden-xs">
+            <div class="container text-center">
+                <h1><strong>Upload File</strong></h1>
+                <p>Pull consequence roster from Kickboard and upload below.</p>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Browse</button>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Filename...">
+                </div>
+            </div>
+        </div>
+        <!--Options-->
+        <div class="container">
+            <div class="well">
+                <h2 class="text-center">View Options</h2>
+                <div class="row text-center">
+                    <div class="btn-group hidden-xs">
+                        <button type="button" class="btn btn-default">Show All</button>
+                        <button type="button" class="btn btn-default">LMS Only</button>
+                        <button type="button" class="btn btn-default">UMS Only</button>
+                        <button type="button" class="btn btn-default">5th Only</button>
+                        <button type="button" class="btn btn-default">6th Only</button>
+                        <button type="button" class="btn btn-default">7th Only</button>
+                        <button type="button" class="btn btn-default">8th Only</button>
+                    </div>
+
+                </div>
+                <div class="row text-center visible-xs">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">Show All</button>
+                        <button type="button" class="btn btn-default">LMS Only</button>
+                        <button type="button" class="btn btn-default">UMS Only</button>
+                    </div>
+                </div>
+                <br class="visible-xs"/>
+                <div class="row text-center visible-xs">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">5th Only</button>
+                        <button type="button" class="btn btn-default">6th Only</button>
+                    </div>
+                </div>
+                <br class="visible-xs"/>
+                <div class="row text-center visible-xs">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default">7th Only</button>
+                        <button type="button" class="btn btn-default">8th Only</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Lists-->
+        <div class="container">
+            <div class=" col-sm-6 col-md-3 col-lg-3">
+                <div class="well">
+                    <h2 class='text-center'>5th Grade</h2>
+                    <p class='text-center'>Created on <strong>10/20/14</strong></p>
+                    <hr/>
+                    <h4>Detention</h4>
+                    <p>in <strong>Tulane</strong></p>
+                    <ul>
+                        <li>D. Johnson</li>
+                        <li>T. Brown</li>
+                        <li>R. Tunsford</li>
+                    </ul>
+                    <hr/>
+                    <h4>HWC</h4>
+                    <p>in <strong>Gonzaga</strong></p>
+                    <ul>
+                        <li>D. Trill</li>
+                        <li>T. Anderson</li>
+                        <li>R. Goto</li>
+                        <li>T. Billingsworth</li>
+                        <li>A. Darden</li>
+                    </ul>
+                    <p>in <strong>UVA</strong></p>
+                    <ul>
+                        <li>A. Person</li>
+                        <li>T. Liffle</li>
+                        <li>R. Goold</li>
+                        <li>T. Brownings</li>
+                        <li>A. Drydock</li>
+                    </ul>
+                </div>
+            </div>
+            <div class=" col-sm-6 col-md-3 col-lg-3">
+                <div class="well">
+                    <h2 class='text-center'>6th Grade</h2>
+                    <p class='text-center'>Created on <strong>10/20/14</strong></p>
+                    <hr/>
+                    <h4>Detention</h4>
+                    <p>in <strong>USC</strong></p>
+                    <ul>
+                        <li>K. Kickball</li>
+                        <li>M. Cookie</li>
+                        <li>R. Tunsford</li>
+                        <li>D. Johnson</li>
+                        <li>T. Brown</li>
+                        <li>R. Tunsford</li>
+                        <li>D. Johnson</li>
+                        <li>T. Brown</li>
+                        <li>H. Togglebutton</li>
+                    </ul>
+                    <hr/>
+                    <h4>HWC</h4>
+                    <p>in <strong>Brandeis</strong></p>
+                    <ul>
+                        <li>D. Trill</li>
+                        <li>T. Anderson</li>
+                        <li>R. Goto</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clearfix visible-sm">
+            
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="well">
+                    <h2 class='text-center'>7th Grade</h2>
+                    <p class='text-center'>Created on <strong>10/20/14</strong></p>
+                    <hr/>
+                    <h4>Detention</h4>
+                    <p>in <strong>Wash U</strong></p>
+                    <ul>
+                        <li>A. Rutherford</li>
+                        <li>T. Brown</li>
+                        <li>R. Tunsford</li>
+                        <li>D. Johnson</li>
+                        <li>T. Johnson</li>
+                    </ul>
+                    <hr/>
+                    <h4>HWC</h4>
+                    <p>in <strong>Houghton</strong></p>
+                    <ul>
+                        <li>Z. Cooker</li>
+                        <li>F. Murray-Abraham</li>
+                        <li>R. Goto</li>
+                        <li>R. Tunsford</li>
+                        <li>D. Johnson</li>
+                        <li>T. Brown</li>
+                        <li>Q. Junglebook</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="well">
+                    <h2 class='text-center'>8th Grade</h2>
+                    <p class='text-center'>Created on <strong>10/20/14</strong></p>
+                    <hr/>
+                    <h4>Detention</h4>
+                    <p>in <strong>Calvin</strong></p>
+                    <ul>
+                        <li>H. Potter</li>
+                        <li>M. Moody</li>
+                        <li>S. Snape</li>
+                        <li>D. Dumbledore</li>
+                        <li>G. Weasley</li>
+                    </ul>
+                    <hr/>
+                    <h4>HWC</h4>
+                    <p>in <strong>Kentucky</strong></p>
+                    <ul>
+                        <li>J. Bennett</li>
+                        <li>F. Murray-Abraham</li>
+                        <li>R. Goto</li>
+                        <li>R. Tunsford</li>
+                        <li>D. Malfoy</li>
+                        <li>H. Granger</li>
+                        <li>R. Weaseley</li>
+                        <li>Y. Know-Who</li>
+                        <li>D. House-elf</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

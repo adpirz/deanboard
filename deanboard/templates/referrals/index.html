@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Referrals</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+    <br/>
+    <br/>
+    <div class="container">
+        {% if referrals %}
+        <ul>
+            {% for referral in referrals %}
+            <div class="well">
+                <li><h2>{{ referral.scholar.first_name }} {{referral.scholar.last_name}}</h2></li>
+                <li><strong>Advisory :</strong> {{referral.scholar.advisory}}</li>
+                <li><strong>Referrer: </strong>{{referral.staff.get_prefix_display}} {{referral.staff.user.last_name}}, {{referral.staff.get_level_display}}</li>
+                <li><strong>Date: </strong>{{referral.datetime}}</li>
+                <li><strong>Reason: </strong>{{referral.get_reason_display}}</li>
+                <li><strong>Description: </strong>{{referral.description}}</li>
+            </div>
+            {% endfor %}
+        {% else %}
+        <div class="well">
+            <strong>No referrals.</strong>
+        </div>
+        {% endif %}
+    </div>
+
+
+
+        <!-- jQuery -->
+        <script src="//code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+[
+    {
+        "model": "referrals.UserProfile",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "level": 1,
+            "prefix": 1
+        }
+
+    },
+    {
+        "model": "referrals.UserProfile",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "level": 1,
+            "prefix": 1
+        }
+
+    },
+    {
+        "model": "referrals.Advisory",
+        "pk": 1,
+        "fields": {
+            "name": "Gonzaga",
+            "grade": 1        
+        }
+    },
+    {
+        "model": "referrals.Advisory",
+        "pk": 2,
+        "fields": {
+            "name": "Michigan",
+            "grade": 4       
+        }
+    },
+    {
+        "model": "referrals.Referral",
+        "pk": 1,
+        "fields": {
+            "scholar": 389,
+            "staff": 1,
+            "datetime": "2014-9-10 15:19",
+            "reason": 3,
+            "description": "He was bad"
+        }
+    },
+    {
+        "model": "referrals.Referral",
+        "pk": 2,
+        "fields": {
+            "scholar": 222,
+            "staff": 2,
+            "datetime": "2014-10-12 14:29",
+            "reason": 3,
+            "description": "He was REAL bad"
+        }
+    },
+    {
+        "model": "referrals.Scholar",
+        "fields": {
+            "first_name": "John",
+            "last_name": "Smith",
+            "kbid": 389,
+            "advisory": 1  
+        }
+    },
+    {
+        "model": "referrals.Scholar",
+        "fields": {
+            "first_name": "Adrian",
+            "last_name": "Pirzada",
+            "kbid": 222,
+            "advisory": 2  
+        }
+    }
+]
+
